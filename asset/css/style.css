@@ -3,77 +3,86 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --nav-bg-color: #0E0630;
     --click-color: #c57db1;
 
 }
-header{
+
+header {
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index: 1;
 }
-h1{
-    color:#87bb34 ;
+
+h1 {
+    color: #87bb34;
     font-size: 25px;
     text-align: center;
 }
 
-h2{
+h2 {
     color: white;
     font-size: 28px;
     margin-bottom: 60px;
     margin-top: 50px;
-    
+
 }
-h3{
+
+h3 {
     color: white;
     font-size: 45px;
 
     margin-bottom: 40px;
 }
-p{
+
+p {
     color: rgb(248, 248, 248);
     font-size: 18px;
     font-weight: lighter;
     padding-bottom: 30px;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     height: 30px;
     align-items: center;
-    
-    
 }
-span{
+
+span {
     color: #87bb34;
     box-shadow: 1px green solid;
 }
-article{
-    padding: 60px 20px 60px ;
+
+article {
+    padding: 60px 20px 60px;
     height: 500px;
-    
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 }
-button{
+
+button {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.137);
     color: #87bb34;
     border: none;
     font-size: 19px;
 }
-i{
+
+i {
     color: #87bb34;
 
 }
-#navmodel{
+
+#navmodel {
     display: flex;
     display: none;
 }
@@ -86,6 +95,7 @@ body {
     padding: 0;
 
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -98,14 +108,17 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
+
 a:link {
     text-decoration: none;
     box-shadow: none;
-    
+
 }
-a:visited{
+
+a:visited {
     color: #87bb34;
 }
+
 .sidenav a {
     padding-bottom: 20px;
     margin-left: 15px;
@@ -119,7 +132,8 @@ a:visited{
     margin-bottom: 10px;
     font-weight: 600;
 }
-#pastoi{
+
+#pastoi {
     border: none;
 }
 
@@ -133,94 +147,116 @@ a:visited{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    
+
 }
 
-.load{
+.load {
     animation: slide 2s;
 
 }
-.slider{
+
+.slider {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
     animation: slide 30s infinite;
-    
-}
-footer{
 
-        
-        display: flex;
+}
+
+footer {
+
+
+    display: flex;
     gap: 100px;
     justify-content: center;
-    
+
     margin-top: 120px;
 }
 
-c{
+c {
     color: #87bb34;
-   font-size: 35px;
+    font-size: 35px;
 
 }
+
 @keyframes slide {
-    0%{
-        background-image: url(../img/devin-avery-IAc62SgoEq8-unsplash.jpg);
+    0% {
+        background-image: url(../img/img1.jpg);
     }
-    20%{
-        background-image: url(../img/devin-avery-IAc62SgoEq8-unsplash.jpg);
+
+    20% {
+        background-image: url(../img/img1.jpg);
     }
-    20.01%{
-        background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+
+    20.01% {
+        background-image: url(../img/img1.jpg);
     }
-    40%{
-        background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+
+    40% {
+        background-image: url(../img/img1.jpg);
     }
-    40.01%{
-        background-image: url(../img/nasa-Q1p7bh3SHj8-unsplash.jpg);
+
+    40.01% {
+        background-image: url(../img/img2.jpg);
     }
-    60%{
-        background-image: url(../img/nasa-Q1p7bh3SHj8-unsplash.jpg);
+
+    60% {
+        background-image: url(../img/img2.jpg);
     }
-    60.01%{
-        background-image: url(../img/markus-spiske-yPBgHCsKdWE-unsplash.jpg);
+
+    60.01% {
+        background-image: url(../img/img4.jpg);
     }
-    80%{
-        background-image: url(../img/markus-spiske-yPBgHCsKdWE-unsplash.jpg);
+
+    80% {
+        background-image: url(../img/img4.jpg);
     }
-    80.01%{
-        background-image: url(../img/markus-spiske-iar-afB0QQw-unsplash.jpg);
+
+    80.01% {
+        background-image: url(../img/img5.jpg);
     }
-    100%{
-        background-image: url(../img/markus-spiske-iar-afB0QQw-unsplash.jpg);
+
+    100% {
+        background-image: url(../img/img5.jpg);
     }
 
 }
-.navmodel{
+
+.navmodel {
     display: none;
 }
 
 
-@media screen and (min-width:760px){
 
-    span{
+/* formulaire */
+
+
+@media screen and (min-width:760px) {
+
+    span {
         display: none;
     }
-    #navmodel{
+
+    #navmodel {
         display: flex;
-        width: 40%;;
+        width: 40%;
+        ;
         justify-content: space-between;
         text-decoration: none;
         list-style: none;
     }
-    footer{
+
+    footer {
         margin-top: 80px;
     }
-    article{
+
+    article {
         padding-top: 170px;
     }
-    .nav{
+
+    .nav {
         background-color: #06011B;
     }
 }
@@ -229,5 +265,5 @@ c{
 
 @media screen and (min-width:992px) {
 
- 
+    
 }
