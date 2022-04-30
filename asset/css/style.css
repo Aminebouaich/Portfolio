@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --nav-bg-color: #0E0630;
+    --click-color: #c57db1;
+
+}
 header{
     position: fixed;
     top: 0px;
@@ -68,7 +73,10 @@ i{
     color: #87bb34;
 
 }
-
+#navmodel{
+    display: flex;
+    display: none;
+}
 
 body {
     font-family: "Rubik", sans-serif;
@@ -139,16 +147,18 @@ a:visited{
     width: 100%;
     height: 100vh;
     animation: slide 30s infinite;
-    transition: 2s cubic-bezier(.5, 0, 0, 1);
+    
 }
 footer{
 
-        margin-top: 130px;
-        justify-content: center;
+        
         display: flex;
-        gap: 60px;
-        height: 50px;
+    gap: 100px;
+    justify-content: center;
+    
+    margin-top: 120px;
 }
+
 c{
     color: #87bb34;
    font-size: 35px;
@@ -186,4 +196,38 @@ c{
         background-image: url(../img/markus-spiske-iar-afB0QQw-unsplash.jpg);
     }
 
+}
+.navmodel{
+    display: none;
+}
+
+
+@media screen and (min-width:760px){
+
+    span{
+        display: none;
+    }
+    #navmodel{
+        display: flex;
+        width: 40%;;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+    }
+    footer{
+        margin-top: 80px;
+    }
+    article{
+        padding-top: 170px;
+    }
+    .nav{
+        background-color: #06011B;
+    }
+}
+
+/* deskop version */
+
+@media screen and (min-width:992px) {
+
+ 
 }
