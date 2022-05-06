@@ -9,7 +9,7 @@
 }
 
 :root {
-    --nav-bg-color: #0E0630;
+    --perroquet : #0E0630;
     --nav-font-weight: bold;
     --h1click-color: #e6471f;
 
@@ -18,8 +18,8 @@
 header {
     position: fixed;
     top: 0px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 
@@ -69,7 +69,7 @@ span {
 
 article {
     padding: 60px 20px 60px;
-    height: 500px;
+    /* height: 500px; */
 
     background-position: center;
     background-size: cover;
@@ -80,7 +80,7 @@ article {
 button {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0);
-    color: var(--h1click-color);
+    color: var(--perroquet);
     border: none;
     font-size: 19px;
 }
@@ -102,6 +102,12 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150vh;
+    animation: slide 24s infinite;
 
 }
 
@@ -162,23 +168,27 @@ a:visited {
 }
 
 .slider {
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 130vh;
-    animation: slide 24s infinite;
+    animation: slide 24s infinite; */
 
 }
 
 footer {
     display: flex;
     gap: 100px;
-    position: fixed;
-    left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, -50%);
+
+    /* position: sticky;
+    left: 0;
+    bottom: 0; */
+    /* transform: translate(-50%, -50%); */
     /* margin: 0 auto; */
+    justify-content:  center;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 c {
