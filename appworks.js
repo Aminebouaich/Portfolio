@@ -6,7 +6,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-// transition vertical
+// transition horizontal div 
 const ratio = .1
 const options = {
     root: null,

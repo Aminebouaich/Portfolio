@@ -409,7 +409,7 @@ span {
 }
 .projet-2, .projet-4 {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-320px);
 }
 
 
@@ -552,15 +552,11 @@ span {
     [class*="projet-"]{
         display: flex;
         flex-direction: column;
-
         width: 100%;
-
     }
 
     .capture {
-
         width: 60%;
-
     }
 
     .projet button {
