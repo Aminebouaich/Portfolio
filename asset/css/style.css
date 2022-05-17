@@ -262,8 +262,8 @@ footer {
 
 .gif {
     height: 160px;
-    width: 200px;
-    opacity: 1;
+    
+    opacity: 0.3;
     fill: #e6471f;
 }
 
