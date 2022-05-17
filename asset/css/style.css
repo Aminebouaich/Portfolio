@@ -273,7 +273,7 @@ footer {
 }
 
 
-/* ----------------------Page formulaire-------------------------------- */
+/* ------------------------Page formulaire-------------------------------- */
 
 h4 {
     font-weight: 400;
@@ -405,11 +405,11 @@ span {
 /* transition div projet*/
 .projet-1, .projet-3 {
     opacity: 0;
-    transform: translateX(500px);
+    transform: translateX(300px);
 }
 .projet-2, .projet-4 {
     opacity: 0;
-    transform: translateX(-320px);
+    transform: translateX(-300px);
 }
 
 
