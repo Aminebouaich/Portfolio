@@ -539,7 +539,7 @@ span {
     .gif {
         height: 250px;
         width: 350px;
-        display: none;
+        opacity: 0;
     }
 
     article {
