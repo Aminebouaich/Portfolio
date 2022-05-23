@@ -11,52 +11,47 @@
 </head>
 
 <body>
-    <main class="slider">
-        <div class="load">
+    <main>
+        <div id="mySidenav" class="sidenav">
+            <a id="pastoi" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./index4.html">About</a>
+            <a href="./index3.html">Work</a>
+            <a href="./contact.html">Contact</a>
         </div>
-        <div class="content">
-            <div class="principal">
-                <div id="mySidenav" class="sidenav">
-                    <a id="pastoi" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="./index.html">Home</a>
-                    <a href="./index4.html">About</a>
-                    <a href="./index3.html">Work</a>
-                    <a href="./contact.html">Contact</a>
+        <header>
+            <nav>
+                <h1>Amine BOUAICH</h1>
+                <ul id="navmodel">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index4.html">About</a></li>
+                    <li><a href="./index3.html">Work</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </nav>
+        </header>
+        <article>
+            <div class="about">
+                <div class="centerimg">
+                    <img class=gif src="./asset/img/web.png">
                 </div>
-                <header>
-                    <div class="nav">
-                        <h1>Amine BOUAICH</h1>
-                        <ul id="navmodel">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./index4.html">About</a></li>
-                            <li><a href="./index3.html">Work</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                                
-                            </ul>
-                        <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                    </div>
-                </header>
-                <article>  
-                    <div class="about">
-                        <div class="centerimg">
-                            <img class= gif src="./asset/img/web.png">
-                        </div>
-                            <div class="centertext">
-                                <p>I’m Amine BOUAICH, but you can just call me Amine.<br>
-                                    Originally hailing from France  for the last decade or so I’ve been honing my skills in design, production and management roles building products for the web, mobile, games and, more recently, VR & AR.<br>
-                                    strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation.</p>
-                            </div>
-                        </div>
-                </article>
-              
+                <div>
+                    <p>I’m Amine BOUAICH, but you can just call me Amine.<br>
+                        Originally hailing from France for the last decade or so I’ve been honing my skills in design,
+                        production and management roles building products for the web, mobile, games and, more recently,
+                        VR & AR.<br>
+                        strive to create elegant solutions that surprise and delight users, while keeping complex
+                        technical dependencies in mind for implementation.</p>
+                </div>
             </div>
-        </div>
+        </article>
     </main>
-      <footer class="reseaux">
-                    <a href="#"><i id="reseaux" class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i id="reseaux" class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i id="reseaux" class="fa-brands fa-linkedin"></i></a>
-        </footer>
+    <footer class="reseaux">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
 
     <script src="./app.js"></script>
 </body>

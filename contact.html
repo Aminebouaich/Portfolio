@@ -11,50 +11,49 @@
 </head>
 
 <body>
-    <main class="slider">
-        <div class="content">
-            <div class="principal">
-                <div id="mySidenav" class="sidenav">
-                    <a id="pastoi" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="./index.html">Home</a>
-                    <a href="./index4.html">About</a>
-                    <a href="./index3.html">Work</a>
-                    <a href="./contact.html">Contact</a>
-                </div>
-                <header>
-                    <div class="nav">
-                        <h1>Amine BOUAICH</h1>
-                        <ul id="navmodel">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./index4.html">About</a></li>
-                            <li><a href="./index3.html">Work</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                        <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                    </div>
-                </header>
-                <article class="contact">
-                    <div class="mail">
-                        <h3>Let's talk</h3>
-                        <p>Get in touch via the from below, or by emailing <button class="reveal-4"><a href="#">
-                                    amine.bo.pro@outlook.fr</a></button></p>
-                    </div>
-                    <form class="form">
-                        <h2>CONTACT US</h2>
-                        <label type="Name:"><input placeholder="Write your name here.."></input></label>
-                        <label type="Email:"><input placeholder="Let us know how to contact you back.."></input></label>
-                        <label type="Message:"><input placeholder="What would you like to tell us.."></input></label>
-                        <button class="send">Send Message</button>
-
-                    </form>
-
-                </article>
-                <footer class="reseaux">
-                    <a href="#"><i id="reseaux" class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i id="reseaux" class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i id="reseaux" class="fa-brands fa-linkedin"></i></a>
-                </footer>
+    <main>
+        <div id="mySidenav" class="sidenav">
+            <a id="pastoi" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./index4.html">About</a>
+            <a href="./index3.html">Work</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <header>
+            <nav>
+                <h1>Amine BOUAICH</h1>
+                <ul id="navmodel">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index4.html">About</a></li>
+                    <li><a href="./index3.html">Work</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </nav>
+        </header>
+        <article class="contact">
+            <div class="mail">
+                <h3>Let's talk</h3>
+                <p>Get in touch via the from below, or by emailing <button class="reveal-4"><a href="#">
+                            amine.bo.pro@outlook.fr</a></button></p>
+            </div>
+            <form class="form">
+                <h2>CONTACT US</h2>
+                <label for="name">Name : <input type="text" id="name"
+                        placeholder="Write your name here.."></input></label>
+                <label for="email"> Email : <input type="email" id="email"
+                        placeholder="Let us know how to contact you back.."></input></label>
+                <label for="message">Message : <input type="text" id="message"
+                        placeholder="What would you like to tell us.."></input></label>
+                <button class="send">Send Message</button>
+            </form>
+        </article>
     </main>
+    <footer class="reseaux">
+        <a href="#"><i id="reseaux" class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i id="reseaux" class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i id="reseaux" class="fa-brands fa-linkedin"></i></a>
+    </footer>
 
     <script src="./app.js"></script>
 </body>

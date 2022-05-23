@@ -15,6 +15,10 @@
 
 }
 
+header {
+    padding: 10px;
+}
+
 
 h1 {
     color: var(--h1click-color);
@@ -49,7 +53,7 @@ p {
     border: none;
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -92,7 +96,6 @@ i {
 }
 
 body {
-    /* font-family: "Rubik", sans-serif; */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #393c41;
     box-sizing: border-box;
@@ -104,6 +107,7 @@ body {
     width: 100%;
     min-height: 100vh;
     /* height: 150vh; */
+    background-color: black;
     animation: slide 15s infinite;
 
 }
@@ -122,7 +126,8 @@ body {
     padding-top: 60px;
 }
 
-a, a:visited{
+a,
+a:visited {
     text-decoration: none;
     box-shadow: none;
     color: var(--h1click-color);
@@ -182,6 +187,7 @@ footer {
     0% {
         background-image: url(../img/img1.jpg);
     }
+
     50% {
         background-image: url(../img/img2.jpg);
     }
@@ -226,12 +232,12 @@ footer {
 
 .gif {
     height: 160px;
-    
+
     opacity: 0.3;
     fill: #e6471f;
 }
 
-.centertext {
+.about p {
     width: 100%;
     margin-top: 30px;
 }
@@ -270,6 +276,10 @@ h4 {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     position: relative
+}
+
+label {
+    color: white;
 }
 
 .from h2 {
@@ -340,6 +350,7 @@ label:before {
 span {
     margin: 0 5px 0 15px
 }
+
 /* -----------------transition---------------------- */
 
 /* transition text*/
@@ -367,11 +378,14 @@ span {
 }
 
 /* transition div projet*/
-.projet-1, .projet-3 {
+.projet-1,
+.projet-3 {
     opacity: 0;
     transform: translateX(300px);
 }
-.projet-2, .projet-4 {
+
+.projet-2,
+.projet-4 {
     opacity: 0;
     transform: translateX(-300px);
 }
@@ -465,12 +479,6 @@ span {
     border-radius: 50%;
 }
 
-#footerprojet {
-    margin: 0;
-    padding: 20px;
-}
-
-
 
 @media screen and (min-width:760px) {
 
@@ -480,7 +488,7 @@ span {
 
     #navmodel {
         display: flex;
-        width: 40%;
+        width: 30%;
         font-weight: var(--nav-font-weight);
         justify-content: space-between;
         text-decoration: none;
@@ -508,13 +516,13 @@ span {
         padding-top: 100px;
     }
 
-    .nav {
+    nav {
         background-color: b;
         height: 45px;
     }
 
     /* WORKS */
-    [class*="projet-"]{
+    [class*="projet-"] {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -532,9 +540,9 @@ span {
 
 /* formulaire */
 
-.form{
-    width:650px;
-    height:600px;
+.form {
+    width: 650px;
+    height: 600px;
 }
 
 /* deskop version */
@@ -553,10 +561,11 @@ span {
         margin-right: 100px;
 
     }
-    .form{
-        width:800px;
-        height:650px;
+
+    .form {
+        width: 800px;
+        height: 650px;
     }
-    
+
 
 }
