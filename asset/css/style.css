@@ -297,12 +297,12 @@ input:focus {
     border-bottom: 2px solid #78788c
 }
 
-p:before {
+label:before {
     content: attr(type);
     display: block;
     margin: 28px 0 0;
     font-size: 14px;
-    color: #5a5a5a
+    color: white
 }
 
 .send {
