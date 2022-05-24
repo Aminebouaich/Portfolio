@@ -1,34 +1,32 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-  // transition vertical
-  const ratio =.1
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: ratio
-  }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
-  const handleIntersect = function (entries, observer) {
-    entries.forEach(function (entry)  {
-      if (entry.intersectionRatio > ratio) {
-        entry.target.classList.add('reveal-visible')
-      
+// transition vertical
+const ratio = .1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add('reveal-visible')
+
       observer.unobserve(entry.target)
-    } 
-    
-    })
-  }
-  
-  
-  const observer = new IntersectionObserver(handleIntersect, options);
-  document.querySelectorAll('[class*="reveal-"]').forEach(function (r) { 
-    observer.observe(r)
-  })
+    }
 
-  
+  })
+}
+
+
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
+  observer.observe(r)
+})

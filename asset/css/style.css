@@ -15,9 +15,30 @@
 
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #393c41;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    /* height: 150vh; */
+    background-color: black;
+    animation: slide 15s infinite;
+    display: flex;
+    flex-direction: column;
+
+}
+
 header {
     padding: 10px;
 }
+
+
 
 
 h1 {
@@ -76,13 +97,18 @@ article {
 
 }
 
-button {
-    padding: 5px;
+.learnmore {
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0);
     color: var(--perroquet);
     border: none;
     font-size: 19px;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 i {
@@ -95,22 +121,7 @@ i {
     display: none;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #393c41;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 100vh;
-    /* height: 150vh; */
-    background-color: black;
-    animation: slide 15s infinite;
 
-}
 
 
 .sidenav {
@@ -167,14 +178,13 @@ a:visited {
 footer {
     display: flex;
     gap: 100px;
-
     justify-content: center;
-    margin: auto;
     margin-bottom: 20px;
-    margin-top: 10rem;
+    margin-top: auto;
+    padding: 30px;
 }
 
-.reseaux i {
+footer i {
     color: var(--h1click-color);
     font-size: 35px;
 }
@@ -209,6 +219,7 @@ footer {
     text-align: center;
     font-size: 20px;
     margin-top: 50px;
+    width: 90%;
 }
 
 .about {
@@ -236,12 +247,6 @@ footer {
     opacity: 0.3;
     fill: #e6471f;
 }
-
-.about p {
-    width: 100%;
-    margin-top: 30px;
-}
-
 
 /* ------------------------Page formulaire-------------------------------- */
 
@@ -486,6 +491,10 @@ span {
         display: none;
     }
 
+    .home {
+        padding: 100px 52px;
+    }
+
     #navmodel {
         display: flex;
         width: 30%;
@@ -493,10 +502,6 @@ span {
         justify-content: space-between;
         text-decoration: none;
         list-style: none;
-    }
-
-    .reseaux {
-        margin-top: 10rem;
     }
 
     /* ABOUT */
@@ -517,9 +522,15 @@ span {
     }
 
     nav {
-        background-color: b;
+        /* background-color: b; */
         height: 45px;
     }
+
+    .about p {
+
+        width: 50%;
+    }
+
 
     /* WORKS */
     [class*="projet-"] {
@@ -532,7 +543,7 @@ span {
         width: 60%;
     }
 
-    .projet button {
+    .projet a {
         margin-top: 50px;
     }
 
@@ -566,6 +577,5 @@ span {
         width: 800px;
         height: 650px;
     }
-
 
 }
