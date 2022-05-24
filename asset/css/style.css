@@ -152,7 +152,7 @@ a:visited {
     font-size: 25px;
     display: block;
     transition: 0.3s;
-    color: white;
+    color: rgb(194, 187, 187);
     font-size: 1.2em;
     border-bottom: solid rgba(128, 128, 128, 0.533) 0.02px;
     margin-bottom: 10px;
@@ -160,7 +160,7 @@ a:visited {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
 }
 
 .sidenav .closebtn {
@@ -171,8 +171,6 @@ a:visited {
     margin-left: 50px;
 
 }
-
-
 
 footer {
     display: flex;
@@ -350,12 +348,14 @@ span {
 [class*="reveal-"] {
     opacity: 0;
     transform: translateY(30px);
+    /* ON masque nos élment en leur donnant une oppacité null*/
 }
 
 .reveal-visible {
     opacity: 1;
     transform: translateY(0);
     transition: 1s cubic-bezier(.5, 0, 0, 1);
+    /* ON faait apparaitre l'élement avec opacity 1 et on redéfini la transfomation à 0 pour que l'élement n'est plus de transformation et une rajoute une transition avec cubic-bezier  */
 }
 
 .reveal-2 {
