@@ -31,6 +31,7 @@ body {
     /* height: 150vh; */
     background-color: black;
     animation: slide 15s infinite;
+    /*annimation infini des 2 images */
     display: flex;
     flex-direction: column;
 
@@ -91,9 +92,9 @@ span {
 
 article {
     padding: 60px 20px 60px;
-    background-position: center;
+    /* background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
 }
 
@@ -102,11 +103,11 @@ article {
     background-color: rgba(0, 0, 0, 0);
     color: var(--h1click-color);
     border: none;
-    font-size: 19px;
+    font-size: 22px;
     margin-top: 30px;
     display: flex;
     align-items: center;
-    width: 130px;
+    width: 150px;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -234,17 +235,6 @@ footer i {
 
 }
 
-.centerimg {
-    display: flex;
-    justify-content: center;
-}
-
-.gif {
-    height: 160px;
-
-    opacity: 0.3;
-    fill: #e6471f;
-}
 
 /* ------------------------Page formulaire-------------------------------- */
 
@@ -482,6 +472,10 @@ span {
     border-radius: 50%;
 }
 
+.learnmore i {
+    margin-top: 3.5px;
+}
+
 
 @media screen and (min-width:760px) {
 
@@ -508,12 +502,6 @@ span {
         overflow: visible;
         line-height: 30px;
 
-    }
-
-    .gif {
-        height: 250px;
-        width: 350px;
-        opacity: 0;
     }
 
     article {
