@@ -8,10 +8,12 @@
     box-sizing: border-box;
 }
 
+/* variable de couleur */
 :root {
-    --projetcolor: #04010f;
+    --navcolor: #04010f;
     --nav-font-weight: bold;
     --h1click-color: #e6471f;
+    --h2h3color: white;
 
 }
 
@@ -39,8 +41,6 @@ header {
 }
 
 
-
-
 h1 {
     color: var(--h1click-color);
     font-size: 25px;
@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: var(--h2h3color);
     font-size: 28px;
     margin-bottom: 60px;
     margin-top: 50px;
@@ -57,7 +57,7 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: var(--h2h3color);
     font-size: 45px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -100,7 +100,7 @@ article {
 .learnmore {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0);
-    color: var(--perroquet);
+    color: var(--h1click-color);
     border: none;
     font-size: 19px;
     margin-top: 30px;
@@ -121,9 +121,7 @@ i {
     display: none;
 }
 
-
-
-
+/* menu burger */
 .sidenav {
     height: 100%;
     width: 0;
@@ -487,6 +485,7 @@ span {
 
 @media screen and (min-width:760px) {
 
+    /* faire disparaitre menu burger */
     span {
         display: none;
     }
@@ -497,7 +496,7 @@ span {
 
     #navmodel {
         display: flex;
-        width: 30%;
+        width: 40%;
         font-weight: var(--nav-font-weight);
         justify-content: space-between;
         text-decoration: none;
@@ -522,7 +521,7 @@ span {
     }
 
     nav {
-        /* background-color: b; */
+        /* background-color: black; */
         height: 45px;
     }
 
@@ -570,12 +569,15 @@ span {
         margin: auto;
         width: 450px;
         margin-right: 100px;
-
     }
 
     .form {
         width: 800px;
         height: 650px;
+    }
+
+    #navmodel {
+        width: 30%;
     }
 
 }
