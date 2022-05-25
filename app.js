@@ -20,7 +20,7 @@ const handleIntersect = function (entries, observer) { // la fonction est appel�
     if (entry.intersectionRatio > ratio) { // on compare intersectionRatio avec le threshold pour afficher ou pas notre élément si intersectionRatio est supérieur du ratio que j'ai défini element devient visible
       entry.target.classList.add('reveal-visible')
 
-      observer.unobserve(entry.target) // la méthode observer permet d'observer l'element commme son nom l'indique 
+      observer.unobserve(entry.target) // la méthode observer permet d'observer l'element commme son nom l'indique contrairtement à unobserver
     }
 
   })

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300&family=Outfit:wght@100&family=Red+Hat+Mono:ital,wght@1,300&family=Rubik:wght@300;400&display=swap');
 
-
+/* reset de la page */
 * {
 
     margin: 0;
@@ -16,6 +16,8 @@
     --h2h3color: white;
 
 }
+
+/*body avec animlation slide infini */
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -324,24 +326,12 @@ label:before {
     color: #fff;
 }
 
-.phone {
-    content: 'Hi';
-    position: absolute;
-    bottom: -15px;
-    right: -20px;
-    background: #50505a;
-    color: #fff;
-    width: 320px;
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    font-size: 13px;
-    box-shadow: 10px 10px 40px -14px #000;
-}
 
 span {
     margin: 0 5px 0 15px
 }
 
+pom
 /* -----------------transition---------------------- */
 
 /* transition text*/
