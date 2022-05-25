@@ -333,22 +333,15 @@ span {
     margin: 0 5px 0 15px
 }
 
-pom
+
 /* -----------------transition---------------------- */
 
 /* transition text*/
 [class*="reveal-"] {
     opacity: 0;
     transform: translateY(30px);
+
     /* ON masque nos élment en leur donnant une oppacité null*/
-}
-
-.reveal-2,
-.reveal-1,
-.reveal-3,
-.reveal-4 {
-    opacity: 0;
-
 }
 
 .reveal-visible {
@@ -401,6 +394,7 @@ pom
 .projet-4 {
     transition-delay: .4s;
 }
+
 
 /* ----------------------Page projets-------------------------------- */
 .works {
