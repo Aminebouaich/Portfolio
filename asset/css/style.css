@@ -17,6 +17,8 @@
 
 }
 
+
+
 /*body avec animlation slide infini */
 
 body {
@@ -339,6 +341,14 @@ pom
     opacity: 0;
     transform: translateY(30px);
     /* ON masque nos élment en leur donnant une oppacité null*/
+}
+
+.reveal-2,
+.reveal-1,
+.reveal-3,
+.reveal-4 {
+    opacity: 0;
+
 }
 
 .reveal-visible {
