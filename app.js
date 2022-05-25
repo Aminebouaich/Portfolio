@@ -10,7 +10,7 @@ function closeNav() {
 // J'ai utlisé l'objet de L API Intersection Observer VOIR MDN
 const ratio = .1
 const options = {
-  root: null, // c'est l'élement racine qui va servir de zone d'affichage et qui nous permmetra de detecter s il est visble ou non dans ce cas je veux que mon élément soi visible dans l'écran dans on met null
+  root: null, // c'est l'element racine qui va servir de zone d'affichage et qui nous permetra de detecter s il est visible ou non dans ce cas je veux que mon élément soi visible dans l'écran dans on met null
   rootMargin: '0px', // ça sert pour dire que l'elemnt doit depasser cette marge pour qu'il devienne visible
   threshold: ratio // le threshold sert à indiquer à partir de quel moment notre élément devient visble ( ligne 11 on indique que je veux que mon élément devient visible a partir de 10% ) si on le met à 1 cela veut dire qu on veut quil devienne visble quand il occupe l'entièté de l'écran 
 }
