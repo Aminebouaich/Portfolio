@@ -1,11 +1,18 @@
+let ouvrirBurger = document.querySelector("span")
+let fermerBurger = document.querySelector(".closebtn")
+
+ouvrirBurger.addEventListener("click", openNav)
+
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "250px"
+
 }
+fermerBurger.addEventListener("click", closeNav)
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+    document.getElementById("mySidenav").style.width = "0"
 
+}
 // transition horizontal div 
 const ratio = .1
 const options = {
